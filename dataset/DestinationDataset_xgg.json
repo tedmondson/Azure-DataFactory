@@ -1,0 +1,17 @@
+{
+	"name": "DestinationDataset_xgg",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MSFT Cohort Sql DB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "wwi",
+			"table": "seed_Sale"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

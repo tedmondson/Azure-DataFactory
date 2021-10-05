@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "CREATE USER [thomas.edmondson@slalom.com] FROM EXTERNAL PROVIDER; -- To create a user with Azure Active Directory\nEXEC sp_addrolemember 'db_owner', 'thomas.edmondson@slalom.com'; ",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SampleDW",
+				"poolName": "SampleDW"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

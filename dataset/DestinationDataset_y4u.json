@@ -1,0 +1,17 @@
+{
+	"name": "DestinationDataset_y4u",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MSFT Cohort Sql DB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "ext",
+			"table": "fact_Purchase"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

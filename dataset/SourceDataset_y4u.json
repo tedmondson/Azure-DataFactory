@@ -1,0 +1,70 @@
+{
+	"name": "SourceDataset_y4u",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [
+			{
+				"name": "Purchase Key",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Date Key",
+				"type": "date"
+			},
+			{
+				"name": "Supplier Key",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Stock Item Key",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "WWI Purchase Order ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Ordered Outers",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Ordered Quantity",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Received Outers",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Package",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Is Order Finalized",
+				"type": "bit"
+			},
+			{
+				"name": "Lineage Key",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "ext",
+			"table": "fact_Purchase"
+		},
+		"sqlPool": {
+			"referenceName": "SampleDW",
+			"type": "SqlPoolReference"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
